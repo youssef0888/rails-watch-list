@@ -1,0 +1,9 @@
+<h1> Hello World </h1>
+<ul> 
+  <% @lists.each do |list| %>
+    <li>
+      <%=list.name%>
+    </li> 
+  <%end%>
+</ul>
+<%=link_to "click here",new_list_path %>
